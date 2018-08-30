@@ -1,6 +1,6 @@
 <template lang="pug">
 v-layout
-  v-flex(xs12 s12 md12)
+  v-flex(xs12 s12 md12 lg6 offset-lg3)
     v-card
       v-img(:src="this.path+'/cover.png'" aspect-ratio='2.75')
       v-card-title(primary-title='')
