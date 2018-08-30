@@ -102,6 +102,7 @@ Google has some good talks
 
 # WebGL 💎 <!-- .element: class="fragment dim title" -->
 <div class="fragment up">
+ - 3D accelerated graphics (GPU enabled)
 [not sure what this is, but it sure looks cool](https://surface-floater.lusion.co)
 [![](2018-08-28-17-44-12.png)](https://surface-floater.lusion.co)
 
@@ -117,7 +118,22 @@ Google has some good talks
 
 ---
 
+# Native Mobile Apps
+## One language to rule them all
 
+- JS 👉 Swift, Java
+
+<div class="img-clear big">
+![](2018-08-28-15-58-04.png)
+![](2018-08-28-15-57-40.png)
+
+
+---V
+
+## what in the world...
+
+![](2018-08-28-15-54-47.png)
+New logos are created every hour
 
 ---
 
@@ -321,28 +337,26 @@ export default {
 <br>
 <div class="fragment up">
 
-- Not even used by Google
-- popular in big enterprise
-- popular to hate on
+- Not used by Google (creators)
+- Popular in big enterprise
+- Multiple versions, hard to find answers to problems
 
 ---
 
-# Native Mobile Apps
-## One language to rule them all
+## UI Frameworks
 
-- JS 👉 Swift, Java
-
-<div class="img-clear big">
-![](2018-08-28-15-58-04.png)
-![](2018-08-28-15-57-40.png)
-
+- Learn to use them
+- They do the design for you
+- Let you focus on building, saving time
 
 ---V
 
-## what in the world...
+## An Example
+### material design is very popular
 
-![](2018-08-28-15-54-47.png)
-New logos are created every hour
+- Vue - [Vuetifyjs](https://vuetifyjs.com/en/)
+- React - [Material UI](https://material-ui.com/)
+- Angular has them too...
 
 ---
 
