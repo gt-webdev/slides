@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="/revealjs/css/reveal.css">
+		<link rel="stylesheet" href="/revealjs/css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="/revealjs/lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? '/revealjs/css/print/pdf.css' : '/revealjs/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section 
+				data-markdown='slides.md'
+				data-separator-vertical="^\r?\n---V\r?\n$"
+				>
+					
+				</section>
+			</div>
+		</div>
+
+		<script src="/revealjs/lib/js/head.min.js"></script>
+		<script src="/revealjs/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: '/revealjs/plugin/markdown/marked.js' },
+					{ src: '/revealjs/plugin/markdown/markdown.js' },
+					{ src: '/revealjs/plugin/notes/notes.js', async: true },
+					{ src: '/revealjs/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+			var prevState = localStorage.getItem('state')
+			console.log(prevState)
+			if (prevState) {
+				setTimeout(()=>{
+					Reveal.setState(JSON.parse(prevState))
+
+				}, 100)
+			}
+			var saveState = function () {
+				window.localStorage.setItem('state', JSON.stringify(Reveal.getState()))
+			}
+			document.body.addEventListener('keydown', saveState)
+			document.body.oncontextmenu = ()=>false
+			// document.body.addEventListener('mousedown', (e)=>{
+			// 	if (e.button === 2) {
+			// 		e.preventDefault()
+			// 		Reveal.prev()
+			// 		return
+			// 	}
+			// 	Reveal.next()
+			// })
+			setInterval(saveState, 100)
+		</script>
+	</body>
+</html>
