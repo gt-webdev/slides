@@ -8,7 +8,7 @@
         //- v-layout(column='' align-center='') hello
         v-layout(wrap)
           mycard.mycard(
-            :title="'Cruising into Web Development'"
+            :title="'8-28-18 Cruising into Web Development'"
             :desc=`'An intro into everything web development - Notes coming soon'`
             :path="'cruising-into-webdev'"
           )
