@@ -13,7 +13,9 @@ v-layout
       v-img(:src="this.path+'/cover.gif'" aspect-ratio='4')
       v-card-title(primary-title='')
         div
-          h3.headline.mb-0 {{this.title}}
+          h3.headline.mb-0 
+            span.title {{this.title}}&nbsp;&nbsp;&nbsp;
+            span.subheading {{this.date}}
           div
             | {{this.desc}}
       v-card-actions
@@ -31,6 +33,7 @@ export default {
     props: {
         title: String,
         desc: String,
+        date: String,
         path: String,
         isNew: Boolean,
         comingSoon: Boolean
@@ -56,6 +59,8 @@ export default {
 
 <style scoped>
 .coming-soon {
+ 
+
   background: repeating-linear-gradient(
       45deg,
     #f8db58,

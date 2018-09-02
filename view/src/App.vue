@@ -20,6 +20,7 @@
             :key="i"
             :title="item.title"
             :desc="item.desc"
+            :date="item.date"
             :path="item.path"
             :isNew="item.isNew"
             :comingSoon="item.comingSoon"
@@ -48,13 +49,13 @@ import mycard from './components/mycard'
         title: 'GT WebDev Slides',
         items: [
           {
-            date: "8-28-18",
+            date: "8/28/18",
             title: "Cruising into Web Development",
             desc: "An intro into everything web development - Notes coming soon",
             path:'cruising-into-webdev'
           },
           {
-            date: "9-04-18",
+            date: "9/4/18",
             title: "Animating Things like a pro",
             desc: `Learn how to create and use snazzy animations. We're talking someone looks at your work and says: "You've spent too much time on this."`,
             path: 'animating-things',
