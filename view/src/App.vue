@@ -7,7 +7,7 @@
       )
         img(
           
-          src="assets/gt-text.png"
+          src="assets/logo.svg"
           style=`height:20px;`
           )
   v-content
