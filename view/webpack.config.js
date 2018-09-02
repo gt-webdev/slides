@@ -1,11 +1,11 @@
 var path = require('path')
 var webpack = require('webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, '../'),
     filename: 'build.js'
   },
   resolve: {
@@ -51,11 +51,19 @@ module.exports = {
   devServer: {
     historyApiFallback: true,
     noInfo: false,
+    contentBase: '../'
+    
   },
   performance: {
     hints: false
   },
-  devtool: '#eval-source-map'
+  devtool: '#eval-source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'index.html',
+
+    })
+  ]
 }
 
 if (process.env.NODE_ENV === 'production') {

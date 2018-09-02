@@ -1,0 +1,29 @@
+{
+  "name": "slides",
+  "version": "1.0.0",
+  "description": "GT-webdev's collection of presentation slides and notes",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd view; npm run dev",
+    "build": "cd view; npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gt-webdev/slides.git"
+  },
+  "keywords": [
+    "slides",
+    "notes",
+    "presentations"
+  ],
+  "author": "gt-webdev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gt-webdev/slides/issues"
+  },
+  "homepage": "https://github.com/gt-webdev/slides#readme"
+}
