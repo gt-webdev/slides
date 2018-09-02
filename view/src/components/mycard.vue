@@ -14,7 +14,7 @@ v-layout
       v-card-title(primary-title='')
         div
           h3.headline.mb-0 
-            span.title {{this.title}}&nbsp;&nbsp;&nbsp;
+            span {{this.title}}&nbsp;&nbsp;&nbsp;
             span.subheading {{this.date}}
           div
             | {{this.desc}}
