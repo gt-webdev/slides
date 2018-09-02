@@ -19,7 +19,9 @@ v-layout
           div
             | {{this.desc}}
       v-card-actions
-        v-btn(v-if="!comingSoon" color='primary' @click="gotopage") View
+        v-btn(v-if="!comingSoon" color='primary' @click="gotopage") 
+          span View
+          v-icon(right) remove_red_eye
         //- v-btn(flat='' color='orange') Explore
         v-btn.coming-soon(v-else disabled) coming soon
     
