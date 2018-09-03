@@ -14,7 +14,8 @@
     v-container()
       v-slide-y-transition(mode='out-in')
         //- v-layout(column='' align-center='') hello
-        v-layout(wrap)
+        v-layout(wrap justify-space-around)
+
           mycard.mycard(
             v-for="(item,i) in items"
             :key="i"
@@ -61,7 +62,7 @@ import mycard from './components/mycard'
             path: 'animating-things',
             isNew:true,
             comingSoon:true
-          }
+          },
         ]
       }
     },
@@ -74,6 +75,10 @@ import mycard from './components/mycard'
 <style>
 .mycard {
   margin: .4em;
+}
+
+.v-toolbar {
+  z-index: 10;
 }
 </style>
 

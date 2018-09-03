@@ -1,6 +1,5 @@
 <template lang="pug">
-v-layout
-  v-flex(xs12 s12 md12 lg6 offset-lg3)
+  v-flex(xs12 lg5)
     v-card
       div(
         style="position:relative;z-index:2"
