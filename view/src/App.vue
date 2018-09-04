@@ -61,7 +61,7 @@ import mycard from './components/mycard'
             desc: `Learn how to create and use snazzy animations. We're talking someone looks at your work and says: "You've spent too much time on this."`,
             path: 'animating-things',
             isNew:true,
-            comingSoon:true
+            comingSoon:false
           },
         ]
       }
