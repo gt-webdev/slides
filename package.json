@@ -3,8 +3,19 @@
   "version": "1.0.0",
   "description": "GT-webdev's collection of presentation slides and notes",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "markdown-air": "0.0.4"
+  },
   "devDependencies": {
+    "@nuxtjs/markdownit-loader": "^1.1.1",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "html-loader": "^0.5.5",
+    "markdown-it-emoji": "^1.4.0",
+    "raw-loader": "^0.5.1",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
