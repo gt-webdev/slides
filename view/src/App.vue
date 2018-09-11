@@ -60,8 +60,16 @@ import mycard from './components/mycard'
             title: "Animating Things like a pro",
             desc: `Learn how to create and use snazzy animations. We're talking someone looks at your work and says: "You've spent too much time on this."`,
             path: 'animating-things',
-            isNew:true,
+            isNew:false,
             comingSoon:false
+          },
+          {
+            date: "9/11/18",
+            title: "React",
+            desc: `Learn the framework every start-up is talking about.`,
+            path: 'react',
+            isNew:true,
+            comingSoon:true
           },
         ]
       }
