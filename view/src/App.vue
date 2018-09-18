@@ -24,6 +24,7 @@
             :date="item.date"
             :path="item.path"
             :isNew="item.isNew"
+            :cover="item.cover"
             :comingSoon="item.comingSoon"
           )
           
@@ -34,6 +35,7 @@
 
 <script>
 import mycard from './components/mycard'
+
 
   export default {
     data () {
@@ -68,6 +70,15 @@ import mycard from './components/mycard'
             title: "React",
             desc: `Learn the framework every start-up is talking about.`,
             path: 'react',
+            isNew:false,
+            comingSoon:true
+          },
+          {
+            date: "9/18/18",
+            title: "Vuejs + Vuetify",
+            desc: `Vuejs and Vuetify, the match-made-in-heaven for Material Design`,
+            path: 'vue-vuetify',
+            cover: require('../../vue-vuetify/cover.html'),
             isNew:true,
             comingSoon:true
           },

@@ -9,7 +9,9 @@
           style="width:20%;position:absolute;top:-1.2em;left:-8%"
           v-if="isNew"
           )
-      v-img(:src="this.path+'/cover.gif'" aspect-ratio='4')
+      div(v-if="cover" v-html="cover" style="width:100%")
+      v-img(v-else :src="this.path+'/cover.gif'" aspect-ratio='4')
+      //- div(v-html=`${this.path}/cover.html`)
       v-card-title(primary-title='')
         div
           h3.headline.mb-0 
@@ -29,7 +31,6 @@
 <script>
 
 import bodymovin from 'bodymovin'
-
 export default {
     props: {
         title: String,
@@ -37,7 +38,8 @@ export default {
         date: String,
         path: String,
         isNew: Boolean,
-        comingSoon: Boolean
+        comingSoon: Boolean,
+        cover: String
     },
     methods: {
         gotopage () {
